@@ -2,6 +2,10 @@
 	"name": "nyatinteconnect",
 	"version": "0.0.1",
 	"private": true,
+	"engines": {
+		"npm": "Use pnpm instead of npm",
+		"yarn": "Use pnpm instead of yarn"
+	},
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
