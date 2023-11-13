@@ -1,8 +1,7 @@
 import { redirect } from '@sveltejs/kit';
 import type { LayoutServerLoad } from './$types';
+import { NYATINTE_TWITTER_URL } from './twitter';
 
-const TWITTER_URL = 'https://twitter.com';
-const USER_ID = 'nyatinte';
 export const load = (async () => {
-	throw redirect(303, `${TWITTER_URL}/${USER_ID}`);
+	throw redirect(303, NYATINTE_TWITTER_URL);
 }) satisfies LayoutServerLoad<void>;

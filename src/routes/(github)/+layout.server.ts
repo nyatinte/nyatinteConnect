@@ -1,8 +1,7 @@
 import { redirect } from '@sveltejs/kit';
 import type { LayoutServerLoad } from './$types';
+import { NYATINTE_GITHUB_URL } from './github';
 
-const GITHUB_URL = 'https://github.com';
-const USER_ID = 'nyatinte';
 export const load = (async () => {
-	throw redirect(303, `${GITHUB_URL}/${USER_ID}`);
+	throw redirect(303, NYATINTE_GITHUB_URL);
 }) satisfies LayoutServerLoad<void>;
