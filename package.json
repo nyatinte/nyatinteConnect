@@ -1,5 +1,7 @@
 {
 	"name": "nyatinteconnect",
+	"author": "Takumi Nakamura <takumi.062757@gmail.com> (http://github.com/nyatinte)",
+	"license": "MIT",
 	"version": "0.0.1",
 	"private": true,
 	"engines": {
