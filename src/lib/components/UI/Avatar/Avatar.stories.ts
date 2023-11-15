@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/svelte';
-import Avatar from './index.svelte';
+import Avatar from './Avatar.svelte';
+
 const meta = {
 	title: 'UI/Avatar',
 	component: Avatar
@@ -10,7 +11,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
 	args: {
-		src: '/nyatinte.png',
-		alt: ''
+		src: '/nyatinte.png'
 	}
 };

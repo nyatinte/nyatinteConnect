@@ -1,3 +1,4 @@
+import '../src/app.postcss';
 import type { Preview } from '@storybook/svelte';
 
 const preview: Preview = {
