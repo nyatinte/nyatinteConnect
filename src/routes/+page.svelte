@@ -7,7 +7,7 @@
 	const { linkCards } = data;
 </script>
 
-<div class="grid h-full w-full grid-rows-2">
+<div class="flex h-full w-full flex-col">
 	<section class="w-full p-10 text-center">
 		<div class="grid place-content-center">
 			<Avatar src="/nyatinte.png" size="xl" />

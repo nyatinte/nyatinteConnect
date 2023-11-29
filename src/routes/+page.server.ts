@@ -18,6 +18,13 @@ export const load = (async () => {
 				href: '/twitter',
 				title: 'Twitter',
 				description: 'ツイートします'
+			},
+			{
+				src: 'https://static.zenn.studio/images/logo.png',
+				alt: '',
+				href: '/zenn',
+				title: 'Zenn',
+				description: '記事を書きます'
 			}
 		]
 	};
