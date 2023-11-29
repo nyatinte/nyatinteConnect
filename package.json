@@ -64,6 +64,8 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"graphql": "^16.8.1",
+		"graphql-yoga": "^5.0.0",
 		"ts-pattern": "^5.0.5"
 	}
 }
