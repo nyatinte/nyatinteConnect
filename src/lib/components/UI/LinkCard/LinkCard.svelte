@@ -7,6 +7,7 @@
 </script>
 
 <a
+	data-sveltekit-preload-data="hover"
 	class="card card-hover flex h-24 w-full items-center gap-4 overflow-hidden rounded-lg bg-white/60 p-4"
 	{href}
 >
