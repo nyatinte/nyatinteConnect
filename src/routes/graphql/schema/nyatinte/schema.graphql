@@ -1,0 +1,26 @@
+type Nyatinte {
+	"""
+	名字
+	"""
+	firstName: String
+	"""
+	本名
+	"""
+	fullName: String
+	"""
+	名前
+	"""
+	lastName: String
+	"""
+	ハンドルネーム
+	"""
+	handle: String
+	"""
+	年齢
+	"""
+	age: Int
+}
+
+extend type Query {
+	nyatinte: Nyatinte
+}

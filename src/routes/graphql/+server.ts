@@ -1,21 +1,13 @@
 import { createSchema, createYoga } from 'graphql-yoga';
-import type { RequestEvent } from '@sveltejs/kit';
+import { typeDefs } from './schema/typeDefs.generated';
+import { resolvers } from './schema/resolvers.generated';
 
-const yogaApp = createYoga<RequestEvent>({
+const yogaApp = createYoga({
 	schema: createSchema({
-		typeDefs: `
-			type Query {
-				hello: String
-			}
-		`,
-		resolvers: {
-			Query: {
-				hello: () => 'SvelteKit - GraphQL Yoga'
-			}
-		}
+		typeDefs,
+		resolvers
 	}),
 	graphqlEndpoint: '/graphql',
-
 	/**
 	 * exampleでは`globalThis`を使っているが、動作しないため変更
 	 *  @see https://github.com/dotansimha/graphql-yoga/issues/3091

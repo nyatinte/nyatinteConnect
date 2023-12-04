@@ -16,12 +16,13 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier  --check . && eslint .",
+		"lint:fix": "eslint . --fix",
 		"format": "prettier  --write .",
 		"test:integration": "playwright test",
 		"test:unit": "vitest",
 		"storybook": "storybook dev -p 6006",
 		"build-storybook": "storybook build",
-		"gqlgen": "graphql-codegen -c ./src/routes/graphql/codegen.ts"
+		"gqlgen": "graphql-codegen --config ./src/routes/graphql/codegen.ts"
 	},
 	"devDependencies": {
 		"@eddeee888/gcg-typescript-resolver-files": "^0.7.1",

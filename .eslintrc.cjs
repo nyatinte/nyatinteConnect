@@ -1,3 +1,6 @@
+/** @typedef {import('eslint').ESLint.ConfigData} ConfigData */
+
+/** @type {ConfigData} */
 module.exports = {
 	root: true,
 	extends: [
