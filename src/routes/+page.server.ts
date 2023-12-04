@@ -25,6 +25,13 @@ export const load = (async () => {
 				href: '/zenn',
 				title: 'Zenn',
 				description: '記事を書きます'
+			},
+			{
+				src: 'https://cdn.iconscout.com/icon/free/png-512/free-graphql-3521468-2944912.png?f=webp',
+				alt: '',
+				href: 'graphql',
+				title: '自己紹介',
+				description: '知りたい情報を、必要な分だけ'
 			}
 		]
 	};
